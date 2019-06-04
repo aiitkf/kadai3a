@@ -15,7 +15,7 @@ neko saru 0
 1.23 2 0
 2 3.58 0
 鼠 35 0
-38 さる 0
+38 さ 0
 )
 prog="./19745134_kadai3.sh"
 numsample=$((${#testnum[@]}/3)) 
