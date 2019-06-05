@@ -17,7 +17,7 @@ neko saru 0
 鼠 35 0
 38 さ 0
 )
-prog="./19745134_kadai3.sh"
+prog="./kf_kadai3.sh"
 numsample=$((${#testnum[@]}/3)) 
 
 
@@ -29,11 +29,11 @@ do
         correctans=${testnum[$((j*3+2))]}
 	returnans=$($prog "$arg1" "$arg2")
         if [ "$returnans" -eq "$correctans" ]; then
-                echo "✓ case $i"
+                echo -e "\e[32m✓ case $i\e[m"
         elif [ $? -gt 0 ] && [ "$correctans" -eq 0 ]; then
-		echo "✓ case $i"
+                echo -e "\e[32m✓ case $i\e[m"
 	else
-		echo"✗ Oops! something is wrong... case $i"
-        fi
+        	echo -e "\e[31m✗ Oops! something is wrong... case $i\e[m"
+	fi
 done
 

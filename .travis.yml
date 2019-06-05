@@ -1,0 +1,7 @@
+language: bash
+script:
+        - echo hello
+        - echo Travis CI test in .travis.yml
+        - ./kf_tester_kadai3.sh
+
+               
