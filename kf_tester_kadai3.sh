@@ -34,6 +34,10 @@ do
                 echo -e "\e[32m✓ case $i\e[m"
 	else
         	echo -e "\e[31m✗ Oops! something is wrong... case $i\e[m"
+		exit 1
 	fi
 done
+
+exit 0
+
 
